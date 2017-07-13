@@ -1,4 +1,4 @@
-IF OBJECT_ID('dbo.sp_DatabaseRestore') IS NULL
+﻿IF OBJECT_ID('dbo.sp_DatabaseRestore') IS NULL
   EXEC ('CREATE PROCEDURE dbo.sp_DatabaseRestore AS RETURN 0;');
 GO
 
@@ -21,6 +21,7 @@ ALTER PROCEDURE [dbo].[sp_DatabaseRestore]
 	  @Debug INT = 0, 
 	  @Help BIT = 0,
 	  @VersionDate DATETIME = NULL OUTPUT
+
 AS
 SET NOCOUNT ON;
 
